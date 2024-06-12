@@ -1,0 +1,422 @@
+/*
+    작성자 : 김종범, 양홍섭
+    작성날짜 : 2024-03-22 ~ 2024-03-28
+*/
+.wrap{
+    width: 100%;
+    height: 2600px;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    position: relative;
+}
+
+/* 헤더 */
+.nav-main{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(46, 48, 48, 0), rgb(20, 20, 20));
+    transition: background-color 0.3s; 
+    z-index: 999; 
+}
+
+.nav-main.transparent {
+    background: linear-gradient(to top, rgba(25, 26, 26, 0.75), rgb(12, 12, 12));
+}
+
+.nav-container{
+    display: flex;
+    margin-left: 50px;
+    padding: 10px;  
+    font-size: 18px;
+}
+
+.conflix-logo{
+    width: 120px;
+    height: 70px;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+.nav-ul{
+    list-style-type: none;
+    display: flex;
+    width: 1000px;
+    margin-top: 27px;
+    text-decoration : none;
+}
+
+.nav-ul li{
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.nav-ul li a:hover{
+    color: grey;
+}
+
+.nav-sub{
+    position: absolute;
+    display: flex;
+    right: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+/* 비디오 */
+.video-container, #endImage{
+    position: relative;
+    background-size: cover;
+    overflow: hidden; 
+}
+
+#endImage{
+    width: 100%;
+    height: 80%;
+}
+
+.video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description{
+    width: 80%;
+    position: relative;
+    top: -500px;
+    left: 120px;
+}
+
+.description p{    
+    margin: 20px 0px;
+    margin-left: 0px;
+    font-size: 18px;
+    line-height:normal;
+    
+}
+.button {
+	width: 150px;
+}
+.description .buttons{
+    display: flex;
+    align-items: center;
+}
+
+.description button{
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.description .space{
+    margin: 10px;
+}
+
+.description.buttons.info img {
+    width: 35px;
+    height: 35px;
+}
+
+
+.buttons > form {
+	margin-right: 20px;
+}
+.description .buttons .play{
+    align-items: center;
+    display: flex;
+    margin-left: -30px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.description .buttons .play:hover {
+    background-color: rgba(150, 150, 150, 0.7);
+  }
+
+.description .buttons .info {
+    color: whitesmoke;
+    background-color: rgba(110, 110, 110, 0.7);
+    display: flex;
+    align-items: center;
+  }
+
+.description .buttons .info:hover {
+    background-color: rgba(60, 60, 60, 0.7);
+}
+
+#movieDetails {
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    z-index: 1000;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.main-movie-info {
+    text-align: center;
+  }
+  
+  .main-movie-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .main-movie-description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+  .main-movie-age {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f39c12;
+  }
+  
+  .img01 {
+  	position: absolute;
+  	top: 100px;
+  	left:100px;
+  }
+
+.age-info {
+    width: 200px;
+    position: relative;
+    top: -550px;
+    right: -86.4%;
+    display: flex;
+    align-items: center;
+  }
+
+.age-info img {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+.age-info .age {
+    width: 86px;
+    background-color: rgba(51, 51, 51, 0.6);
+    padding: 15px 25px;
+    position: relative;
+    font-weight: bold;
+  }
+.age-info .age:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: orange;
+    left: 0;
+    top: 0;
+ 	}
+
+
+/*-------------- movie-container ---------------*/
+.movie-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -350px;
+    overflow-x: hidden;
+}
+
+.movie-card {
+    position: relative;
+    box-sizing: border-box;
+    margin: 5vw 0;
+    padding: 0 4%;
+}
+
+/* slider */
+.slider {
+    margin: 0 auto;
+    white-space: nowrap;
+}
+.slider > div {
+    width: 220px;
+    height: 200px;
+    display: inline-block;
+    padding: 0 .2vw;
+    position: relative;
+}
+
+.slider-item {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+/* slider-items */
+
+.title{
+    margin-bottom: 20px;
+}
+.title > div {
+    display: table-cell;
+    font-size: 1.4vw;
+    line-height: 1.25vw;
+    vertical-align: bottom;
+}
+.title-card {
+    width: 218px;
+    height: 122px;
+    transition: width 0.5s ease;
+    position: absolute;  
+}
+.title-card:hover {
+    width: 150%;
+    height: 150%;
+    z-index: 999;
+    position: absolute;  
+}
+
+.img-box { /* 썸네일 */
+    height: 0;
+    overflow-x: clip;
+    position: relative;
+    width: 100%;
+    padding: 28.125% 0;
+    border-radius: .2vw;
+}
+.img-box img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.hidden-box { /* hidden-box */
+    background-color: #202020; /* color */
+    border-radius: 0 0 5% 5%;   
+    display: none;
+    z-index: 999;
+}
+
+.title-card:hover .hidden-box {
+    display: block;
+}
+
+.hidden-video {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.title-card:hover .img-box {
+    display: none;
+}
+.title-card:hover .hidden-video {
+    display: block;
+}
+
+.movie-info {
+    position: absolute;
+    top: 0;
+    right: -240px;
+    width: 240px;
+    height: 275px; /* 수정필요 */
+    background-color: #202020;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.hidden{
+    display: none;
+}
+.movie-info span {
+    display: block;
+}
+
+.icon-box {
+    margin-top: 7px;
+    cursor: pointer;
+}
+.icon-box img {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+.icon-box img:nth-child(1) {
+    margin-left: 10px;
+}
+.icon-box img:nth-child(3) {
+    float: right;
+    margin-right: 10px;
+}
+.line-box {
+    margin: 0 0 0 10px;
+    padding-bottom: 10px;
+}
+.line-1 {
+    margin-bottom: 10px;
+}
+.line-1 span:nth-child(2)  {
+    border: #333 1px solid;
+    margin-left: 10px;
+    background-color: #333;
+    
+}
+.vew {
+    float: right;
+    margin-right: 10px;
+}
+.icon-box img.rotate {
+    transform: rotate(180deg);
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 9999;
+  }
+
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+
+  .item-last {
+    background-color: gray;
+    width: 218px;
+    height: 122px;
+  }
+  
+  .movie-info > span > a {
+  	color: gray;
+  }
+/*------------------ footer -------------------*/
+.footer-container {
+    color: rgb(119, 119, 119);
+    width: 960px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 0px;
+}

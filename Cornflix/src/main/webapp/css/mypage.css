@@ -1,0 +1,128 @@
+a{
+    color: #0073E7;
+}
+.wrap{
+    
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+.header{
+    
+    height: 100px;
+    margin-top: 2%;
+}
+.header h1{
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 3%;
+    
+}
+.header h3{
+    display: inline-block;
+}
+/* 상세 정보*/
+.membership_1{
+    border-top: 1px solid black;
+    padding-top: 2%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+.member_1_1{
+    
+    width: 20%;
+    display: inline-block;
+}
+.membership_1 h1{
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+.member_1_2{
+    display: inline-block;
+    width: 75%;
+}
+.member_1_2 p{
+    display: flex;
+    margin-bottom: 1%;
+    
+}
+.member_1_2 p a{
+    margin-left: auto;
+    text-decoration: none;
+}
+.memeberP{
+    margin-top: 130px;
+}
+
+.membership_2{   
+    border-top: 1px solid black;
+    padding-top: 2%;
+    width: 100%;
+    height: 80px;
+}
+.membership_2 h1{
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+.member_2_1{
+    
+    width: 20%;
+    display: inline-block;
+}
+.member_2_2{
+    display: inline-block;
+    width: 75%;
+}
+.member_2_2 p{
+    display: flex;
+    margin-bottom: 1%;
+    
+}
+.member_2_2 p a{
+    margin-left: auto;
+    text-decoration: none;
+}
+.membership_3{
+    border-top: 1px solid black;
+    padding-top: 2%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+.member_3_1{
+    
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+.member_3_1 h1{
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+.member_3_2{
+    display: inline-block;
+    width: 75%;
+}
+.member_3_2 p{
+    display: flex;
+    margin-bottom: 1%;
+}
+.member_3_2 p a{
+    margin-left: auto;
+    text-decoration: none;
+}
+
+button{
+    width: 80%;
+    height: 60px;
+    margin-top:20px;
+    background-color: #DFDFDF;
+    border: none;
+    border-radius: 10px;
+    font-size:20px ;
+}
